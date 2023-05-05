@@ -30,7 +30,7 @@ const Checkout = () => {
   const description = `eShop Payment: ${customerEmail}, Amount: ${cartTotalAmount} `
 
   useEffect(() => {
-    fetch("http://localhost:4242/create-payment-intent", {
+    fetch("https://eshop-react-backend.onrender.com/create-payment-intent", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ 
